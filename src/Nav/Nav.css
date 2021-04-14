@@ -1,0 +1,16 @@
+Nav {
+    display: flex;
+    background-color: darkgray;
+    justify-content: flex-end;
+    color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+}
+  
+.nav-link {
+    margin-right: 3%;
+    font-size: 20px;
+}
+
