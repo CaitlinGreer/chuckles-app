@@ -3,6 +3,7 @@ import { Route, Link } from 'react-router-dom'
 import './App.css'
 
 import Nav from './Nav/Nav' //Navigation Bar
+import Footer from './Footer/Footer' //Footer
 import LandingPage from './LandingPage/LandingPage' //home page
 import JokesList from './JokesList/JokesList' //list of jokes
 import AddJoke from './AddJoke/AddJoke' //add a joke form
@@ -17,7 +18,7 @@ class App extends Component {
           <h1>Chuckles</h1>
           <h2>Where Dad Jokes Are Our Specialty</h2>
         </header>
-        <LandingPage />
+        
         <Route
               exact
               path='/'
@@ -31,6 +32,7 @@ class App extends Component {
             path='/jokes-list'
             component={JokesList}
         />
+        <Footer />
       </main>
     );
   }
