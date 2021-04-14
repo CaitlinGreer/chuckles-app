@@ -1,5 +1,28 @@
-.info-section{
+.landing-page-container{
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: auto;
+}
+
+.welcome-content {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 25px 50px;
+    padding: 10px;
+}
+
+.random-joke {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 25px 50px;
+    padding: 10px;
+}
+
+.welcome-info {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 25px 50px;
+    padding: 15px;
+    text-align: justify;
+
 }
