@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
 import { Route, Link } from 'react-router-dom'
 import './App.css'
+
 import Nav from './Nav/Nav' //Navigation Bar
+import LandingPage from './LandingPage/LandingPage' //home page
+import JokesList from './JokesList/JokesList' //list of jokes
+import AddJoke from './AddJoke/AddJoke' //add a joke form
+
 
 class App extends Component {
   render(){
@@ -12,19 +17,20 @@ class App extends Component {
           <h1>Chuckles</h1>
           <h2>Where Dad Jokes Are Our Specialty</h2>
         </header>
+        <LandingPage />
         <Route
               exact
               path='/'
               component={LandingPage}
             />
-            <Route
-              path='/add-joke'
-              component={AddJoke}
-            />
-            <Route
-              path='/jokes-list'
-              component={JokesList}
-            />
+        <Route
+            path='/add-joke'
+            component={AddJoke}
+        />
+        <Route
+            path='/jokes-list'
+            component={JokesList}
+        />
       </main>
     );
   }
