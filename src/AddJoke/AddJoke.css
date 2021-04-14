@@ -1,0 +1,15 @@
+.form-heading{
+    font-size: 35px;
+}
+
+.add-joke-fieldset{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 45px;
+    padding: 35px;
+    font-size: 20px;
+}
+
+.submit-btn {
+    max-width: 150px;
+}

@@ -1,0 +1,10 @@
+.jokes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.joke-list-heading {
+    font-size: 40px;
+}
