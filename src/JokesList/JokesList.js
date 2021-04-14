@@ -5,7 +5,12 @@ import './JokesList.css'
 class JokesList extends Component {
     render() {
         return (
-            <JokeCard />
+            <div>
+                <h2 className='joke-list-heading'>Let's Have A Chuckle...</h2>
+            <div className='jokes-container'>
+                <JokeCard />
+            </div>
+            </div>
         )
     }
 }
