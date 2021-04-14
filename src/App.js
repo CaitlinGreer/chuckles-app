@@ -3,6 +3,7 @@ import { Route, Link } from 'react-router-dom'
 import './App.css'
 
 import Nav from './Nav/Nav' //Navigation Bar
+import Header from './Header/Header' //Header
 import Footer from './Footer/Footer' //Footer
 import LandingPage from './LandingPage/LandingPage' //home page
 import JokesList from './JokesList/JokesList' //list of jokes
@@ -12,18 +13,15 @@ import AddJoke from './AddJoke/AddJoke' //add a joke form
 class App extends Component {
   render(){
     return (
-      <main className='App'>
+      <div className='App'>
         <Nav />
-        <header className='header'>
-          <h1>Chuckles</h1>
-          <h2>Where Dad Jokes Are Our Specialty</h2>
-        </header>
+        <Header />
         
         <Route
-              exact
-              path='/'
-              component={LandingPage}
-            />
+            exact
+            path='/'
+            component={LandingPage}
+        />
         <Route
             path='/add-joke'
             component={AddJoke}
@@ -32,8 +30,10 @@ class App extends Component {
             path='/jokes-list'
             component={JokesList}
         />
+        
         <Footer />
-      </main>
+        
+      </div>
     );
   }
 }
