@@ -7,7 +7,7 @@ class AddJoke extends Component {
         return (
             <div className='form-page-container'>
                 <div className='form-heading'>
-                    <h2>Share A Chuckle...</h2>
+                    <h2>Share A Chuckle...We Dare You!</h2>
                 </div>
                 <form>
                     <fieldset className='add-joke-fieldset'>
