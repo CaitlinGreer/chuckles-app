@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import './App.css'
 
 import Nav from './Nav/Nav' //Navigation Bar
@@ -13,23 +13,21 @@ class App extends Component {
     return (
       <div className='App'>
         <Nav />
-               
-        <Route
-            exact
-            path='/'
-            component={LandingPage}
-        />
-        <Route
-            path='/add-joke'
-            component={AddJoke}
-        />
-        <Route
-            path='/jokes-list'
-            component={JokesList}
-        />
-        
-        
-        
+        <Switch>       
+          <Route
+              exact
+              path='/'
+              component={LandingPage}
+          />
+          <Route
+              path='/add-joke'
+              component={AddJoke}
+          />
+          <Route
+              path='/jokes-list'
+              component={JokesList}
+          />
+        </Switch>
       </div>
     );
   }
