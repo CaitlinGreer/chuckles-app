@@ -9,6 +9,7 @@ function JokeCard(props){
                     <p className='joke'>{props.joke}</p>
                     <p className='punchline'>{props.punchline}</p>
                     <p className='user-name'>Submitted By: {props.submitted_by}</p>
+                    <p className='date-submitted'>{props.date_submitted}</p>
                 </div>
             </div>
             

@@ -13,6 +13,7 @@ class JokesList extends Component {
                     joke={joke.joke}
                     punchline={joke.punchline}
                     submitted_by={joke.submitted_by}
+                    date_submitted={joke.date_submitted}
                 />
             )
         })
