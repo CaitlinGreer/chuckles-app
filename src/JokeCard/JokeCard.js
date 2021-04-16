@@ -1,4 +1,5 @@
 import React from 'react'
+import Moment from 'react-moment'
 
 import './JokeCard.css'
 
@@ -9,7 +10,7 @@ function JokeCard(props){
                     <p className='joke'>{props.joke}</p>
                     <p className='punchline'>{props.punchline}</p>
                     <p className='user-name'>Submitted By: {props.submitted_by}</p>
-                    <p className='date-submitted'>{props.date_submitted}</p>
+                    <Moment format='MMM D, YYYY' className='date-submitted'>{props.date_submitted}</Moment>
                 </div>
             </div>
             
