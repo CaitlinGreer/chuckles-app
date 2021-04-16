@@ -34,8 +34,8 @@ class AddJoke extends Component {
                         <label htmlFor='user-name'>Submitted By:</label>
                         <input 
                             type='text'
-                            id='punchline'
-                            name='punchline'
+                            id='user-name'
+                            name='user-name'
                             placeholder='Jerry Seinfeld'
                         />   
                         <br />
