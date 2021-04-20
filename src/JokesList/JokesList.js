@@ -1,30 +1,33 @@
 import React, { Component } from 'react'
 import JokeCard from '../JokeCard/JokeCard'
 import './JokesList.css'
-import dummyJokes from '../DummyJokes'
+import JokesContext from '../jokesContext'
 
 class JokesList extends Component {
+    static defaultProps = {
+        jokes: []
+        }
+    
+    static contextType = JokesContext
       
     render() {
-        const jokeCards = dummyJokes.map(joke => {
+        const { jokes } = this.context
+
             return (
-                <JokeCard 
-                    key={joke.id} 
-                    joke={joke.joke}
-                    punchline={joke.punchline}
-                    submitted_by={joke.submitted_by}
-                    date_submitted={joke.date_submitted}
-                />
-            )
-        })
-        return (
-            <div>
+                <section className='JokeCardList'>
                 <h2 className='joke-list-heading'>Let's Have A Chuckle...</h2>
-            <div className='jokes-container'>
-                {jokeCards}
-            </div>
-            </div>
-        )
+
+                    <ul className='jokes-container' aria-live='polite'>
+                        {jokes.map(joke =>
+                            <JokeCard 
+                                key={joke.id} 
+                                {...joke}
+                            />
+                        )}
+                    </ul>
+                    {/* <Link className='add-joke-link' to={'/add-joke'}>Tell Us A Joke</Link> */}
+                </section>
+            )
     }
 }
 
