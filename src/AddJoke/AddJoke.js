@@ -1,15 +1,99 @@
 import React, { Component } from 'react'
-
+import config from '../config'
+import JokesContext from '../jokesContext'
 import './AddJoke.css'
 
 class AddJoke extends Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            joke: {
+                value: ''
+            },
+            punchline: {
+                value: ''
+            },
+            submitted_by: {
+                value: ''
+            }
+        }
+    }
+
+    static defaultProps = {
+        history: {
+          goBack: () => { }
+        }
+    }
+    
+    static contextType = JokesContext
+
+//onChange Functions
+
+    updateJoke(joke){
+        this.setState({
+            joke: {
+                value: joke
+            }
+        })
+    }
+
+    updatePunchline(punchline){
+        this.setState({
+            punchline: {
+                value: punchline
+            }
+        })
+    }
+
+    updateSubmittedBy(submitted_by){
+        this.setState({
+            submitted_by: {
+                value: submitted_by
+            }
+        })
+    }
+
+    handleSubmit = event => {
+      event.preventDefault()
+      const { joke, punchline, submitted_by } = this.state
+      const newJoke = {
+        joke: joke.value,
+        punchline: punchline.value,
+        submitted_by: submitted_by.value
+      }
+      
+      const requestOptions = {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(newJoke)
+      }
+  
+      fetch(`${config.API_ENDPOINT}/jokes`, requestOptions)
+        .then(res => {
+          if (!res.ok) {
+            throw new Error('Whoops!  Looks like something went wrong! Try again later.')
+          }
+          return res.json()
+        })
+        .then((data) => {
+          joke.value = ''
+          punchline.value = ''
+          submitted_by.value = ''
+          this.context.addJoke(data)
+          this.props.history.push('/jokes')
+        })
+        .catch(error => {
+          this.setState({error})
+        })
+    }
+
     render() {
         return (
             <div className='form-page-container'>
                 <div className='form-heading'>
                     <h2>Share A Chuckle...We Dare You!</h2>
                 </div>
-                <form>
+                <form onSubmit={e => this.handleSubmit(e)}>
                     <fieldset className='add-joke-fieldset'>
                         <legend>Tell Us A Joke</legend>
 
@@ -19,6 +103,7 @@ class AddJoke extends Component {
                             id='joke'
                             name='joke'
                             placeholder='Why did the chicken cross the road?'
+                            onChange={e => this.updateJoke(e.target.value)}
                             required
                         />
                         <br />
@@ -28,6 +113,7 @@ class AddJoke extends Component {
                             id='punchline'
                             name='punchline'
                             placeholder='To get to the other side'
+                            onChange={e => this.updatePunchline(e.target.value)}
                             required
                         />
                         <br />
@@ -37,6 +123,7 @@ class AddJoke extends Component {
                             id='user-name'
                             name='user-name'
                             placeholder='Jerry Seinfeld'
+                            onChange={e => this.updateSubmittedBy(e.target.value)}
                         />   
                         <br />
                         <button 
@@ -44,8 +131,6 @@ class AddJoke extends Component {
                             className='submit-btn'>
                                 Make Us Laugh
                         </button>
-
-                       
                     </fieldset>
                 </form>    
             </div>
