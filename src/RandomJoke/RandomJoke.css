@@ -6,3 +6,9 @@
     font-size: 25px;
     color: blue;
 }
+
+.random-joke-container {
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
