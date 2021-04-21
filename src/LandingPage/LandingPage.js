@@ -30,9 +30,9 @@ class LandingPage extends Component {
                     </div>        
                         
     
-                    <div className='random-joke'>
+                    <div className='random-joke-main-container'>
                         <h3>Joke of The Day</h3>
-                            <div className='content'>
+                            <div>
                                 <RandomJoke />
                             </div>
                     </div>
