@@ -75,12 +75,9 @@ class AddJoke extends Component {
           }
           return res.json()
         })
-        .then((data) => {
-          joke.value = ''
-          punchline.value = ''
-          submitted_by.value = ''
-          this.context.addJoke(data)
-          this.props.history.push('/jokes')
+        .then(() => {
+            this.props.history.goBack()
+            this.context.fetchJokes()
         })
         .catch(error => {
           this.setState({error})
