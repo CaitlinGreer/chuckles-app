@@ -4,12 +4,16 @@ import './Nav.css'
 
 export default function Nav(props) {
     return (
-        <nav className='Nav'>
-          <Link className='nav-link' to={'/'}>Home</Link>
-          {' '}
-          <Link className='nav-link' to={'/jokes-list'}>Jokes</Link>
-          {' '}
-          <Link className='nav-link' to={'/add-joke'}>Tell Us A Joke</Link>
-        </nav>
+        <div className='nav-bar'>
+          <h1><Link className='nav-link-header' to={'/'}>Chuckles</Link></h1>
+          <ul className='nav-links'>
+            <li>
+              <Link to={'/jokes-list'}>Jokes</Link>
+            </li>
+            <li>
+              <Link to={'/add-joke'}>Tell A Joke</Link>
+            </li>
+          </ul>
+        </div>
     )
 }
