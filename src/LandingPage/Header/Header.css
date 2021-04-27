@@ -61,6 +61,7 @@
     font-size: 60px;
     position: absolute;
     bottom: 10px;
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -79,7 +80,7 @@
     }
   }
 
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 480px) {
       .header-title {
           font-size: 30px;
       }
