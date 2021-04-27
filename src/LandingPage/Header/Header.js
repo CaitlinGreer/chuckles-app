@@ -12,7 +12,10 @@ class Header extends React.Component {
                     <h1 className='header-title'>Welcome To Chuckles</h1>
                     <h2 className='subheader'>Read a joke, share a joke, chuckle and repeat!</h2>
                 </header>
-                <FontAwesomeIcon icon={ faArrowCircleDown } className='icon' />
+                <a href='#landing-page-container'>
+                    <FontAwesomeIcon icon={ faArrowCircleDown } className='icon' />
+                </a>
+                
             </div>
         )
     }

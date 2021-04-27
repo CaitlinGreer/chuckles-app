@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 .home-page-container {
-    background-image: url(/src/images/background.jpeg);
+  background-image: url(/src/images/background.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding-top: 10%;
-  margin: 0 auto;
+
 }
 
 .landing-page-container{
@@ -18,7 +17,7 @@
     width: auto;
     height: auto;
     text-align: justify;
-    margin-top: 10%;
+    margin-top: 20%;
     margin-left: 5%;
     margin-right: 5%;
     padding: 3%;

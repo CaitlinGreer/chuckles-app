@@ -12,7 +12,7 @@ class LandingPage extends Component {
             <div className='home-page-container'>
             <Header />
             
-                <div className='landing-page-container'>
+                <div className='landing-page-container' id='landing-page-container'>
                     <div className='welcome-info'>
                         <p>Did you know laughter and smiling are scientifically proven to improve your health and mental state?  I know...it's crazy right? 
                            With a world as crazy as it is, why not create something that brings a little joy into people's lives!
