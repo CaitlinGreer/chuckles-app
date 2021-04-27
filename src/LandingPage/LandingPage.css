@@ -13,7 +13,7 @@
     flex-direction: column;
 }
 
-.welcome-info {
+.welcome-info, .share-a-joke{
     width: auto;
     height: auto;
     text-align: justify;
@@ -96,17 +96,17 @@
         100%{background-position:0% 50%}
     }
 
-.random-joke-main-container h3 {
+.random-joke-main-container h3, .welcome-info h3 {
     font-family: 'Luckiest Guy', sans-serif;
     text-align: center;
 }
 
 @media all and (min-width: 600px) {
-    .welcome-info {
+    .welcome-info .share-a-joke{
         font-size: 30px;
     }
     
-    .random-joke-main-container h3 {
+    .random-joke-main-container h3, .welcome-info h3 {
         font-size: 45px;
     }
 }
