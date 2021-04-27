@@ -16,6 +16,7 @@ class RandomJoke extends Component {
         
         return (
             <div className='random-joke-container'>
+                <div className='random-joke-card'></div>
                 <JokeCard   
                     {...randomJoke} />
             </div>

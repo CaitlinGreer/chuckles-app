@@ -1,17 +1,84 @@
 .header-container {
-    margin-top: -7%;
-    background-color: grey;
-    color: white;
-    padding: 1px;
-    width: 100%;
-    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 30vh;
+    background-color: transparent;
+    color: transparent;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 3px 10px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(268deg, #0799ee, #ff8c00, #ff0080);
+    background-size: 600% 600%;
+    -webkit-animation: gradient 19s ease infinite;
+    -moz-animation: gradient 19s ease infinite;
+    animation: gradient 19s ease infinite;
+    }
+    
+    @-webkit-keyframes gradient {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes gradient {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes gradient {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+
+
 .header-title {
+    font-family: 'Luckiest Guy', sans-serif;
     font-size: 45px;
-  }
-  
+}
+
 .subheader {
-    font-size: 35px;
-    margin-top: -20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    margin-top: -5px;
+  }
+
+.icon {
+    font-size: 60px;
+    position: absolute;
+    bottom: 10px;
+    color: #0799ee;
+}
+
+  @media all and (min-width: 600px) {
+    .header-container {
+        margin-top: -100px;
+    }  
+    
+    .header-title {
+          font-size: 55px;
+    }
+  }
+
+  @media all and (max-width: 350px) {
+      .header-title {
+          font-size: 30px;
+      }
+      .subheader {
+          font-size: 20px;
+      }
   }

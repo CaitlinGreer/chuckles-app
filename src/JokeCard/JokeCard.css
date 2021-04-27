@@ -1,20 +1,20 @@
 
-
 .joke-card-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     border-radius: 50%;
+    background: rgba(255, 0, 128, .3);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 25px;
-    height: 200px;
+    height: 225px;
     position: relative;
-    width: 200px;
+    width: 225px;
   }
   .joke-card {
-    margin-top: 30%;
+    margin-top: 33%;
     height: 100%;
     position: absolute;
     transform-style: preserve-3d;

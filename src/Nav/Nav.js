@@ -4,7 +4,7 @@ import './Nav.css'
 
 export default function Nav(props) {
     return (
-        <div className='nav-bar'>
+        <nav className='nav-bar'>
           <h1><Link className='nav-link-header' to={'/'}>Chuckles</Link></h1>
           <ul className='nav-links'>
             <li>
@@ -14,6 +14,6 @@ export default function Nav(props) {
               <Link to={'/add-joke'}>Tell A Joke</Link>
             </li>
           </ul>
-        </div>
+        </nav>
     )
 }

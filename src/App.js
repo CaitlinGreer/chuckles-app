@@ -78,11 +78,10 @@ class App extends Component {
     }
     return (
       <JokesContext.Provider value={value}>
-        <div>
-          <nav>
-            <Nav />
-          </nav>
-          <main>
+        <div >
+          <Nav />
+          
+          <main className='main-container'>
             {this.renderRoutes()}
           </main>
         </div>

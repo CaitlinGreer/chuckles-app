@@ -1,43 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-.nav-bar {
+ .nav-bar {
     display: flex;
     justify-content: space-between;
-    background-color: black;
     align-items: baseline;
+    background-color: #000;
     position: fixed;
-    top: 0;
     width: 100%;
-    height: 10%;
-    z-index: 1;
+    height: 8%;
+    z-index:1;
 }
   
 .nav-links{
     display: flex;
     list-style-type: none;
-    padding-right: 20px;
-    padding-top: 4px;
+    font-family: 'Raleway', sans-serif;
+    padding-right: 5px;
 }
 
 .nav-links a {
-    color: white;
+    color: #ff0080;
+    padding-right: 12px;
     text-decoration: none;
-    padding-right: 15px;
-    padding-top: 4px;
+    font-size: 18px;
 }
 
 
 .nav-link-header {
+    align-self: start;
+    padding-top: 20px;
     padding-left: 10px;
-    padding-top: 2px;
-    background-color: white;
     color: transparent;
-    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-image: linear-gradient(268deg, #0799ee, #ff8c00, #ff0080);
     background-size: 100%;
     background-clip: text;
-    
     font-family: 'Luckiest Guy', sans-serif;
-    font-size: 45px;
+    font-size: 35px;
     text-decoration: none;
     white-space: nowrap;
+    
 }
+
+.nav-link-header h1 {
+    margin: 0;
+  }
+  
+.nav-link-header h1 a {
+    margin: 0;
+  }
+
+.nav-links a:hover, .nav-links a:focus {
+    color: #ff8c00
+}
+  
+
+
+@media all and (min-width: 600px) {
+    .nav-bar {
+        padding-top: 10px;
+        height: auto;
+      }
+
+    .nav-link-header {
+        font-size: 55px;
+        
+    }
+
+    .nav-links a {
+        font-size: 30px;
+        padding-right: 25px;
+    }
+  }
+
+  @media all and (max-width: 375px) {
+      .nav-link-header {
+          font-size: 30px;
+          padding-left: 10px;
+      }
+
+      .nav-links a {
+          font-size: 15px;
+          padding-right: 5px;
+      }
+  } 
