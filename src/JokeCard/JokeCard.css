@@ -28,14 +28,19 @@
   .joke-card:hover {
     transform: rotateY(180deg);
   }
-  .joke-card .side {
+  .joke-card .front {
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateX(0deg);
     height: 100%;
     position: absolute;
     width: 100%;
   }
-  .joke-card .side-back {
-    backface-visibility: hidden;
+
+  .joke-card .back {
+     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateX(0deg);
     transform: rotateY(180deg);
   }
   
@@ -46,7 +51,7 @@
     font-size: 15px;
   }
 
-  .side, .side-back {
+  .front, .back {
     padding: 2px;
 
   }
