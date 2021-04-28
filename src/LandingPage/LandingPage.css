@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-.home-page-container {
-  background-image: url(/src/images/background.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-}
-
 .landing-page-container{
     display: flex;
     flex-direction: column;
@@ -17,7 +9,7 @@
     width: auto;
     height: auto;
     text-align: justify;
-    margin-top: 20%;
+    margin-top: 15%;
     margin-left: 5%;
     margin-right: 5%;
     padding: 3%;
@@ -64,7 +56,8 @@
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 10%;
-    padding: 5%;
+    padding-top: 1%;
+    padding-bottom: 5%;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     background-color: transparent;
@@ -96,17 +89,21 @@
         100%{background-position:0% 50%}
     }
 
-.random-joke-main-container h3, .welcome-info h3 {
+.random-joke-main-container h3, .welcome-info h3, .share-a-joke h3 {
     font-family: 'Luckiest Guy', sans-serif;
+    text-shadow: 2px 2px black;
+    font-size: 30px;
     text-align: center;
+    margin-top: 2%;
+    margin-bottom: -3px;
 }
 
 @media all and (min-width: 600px) {
-    .welcome-info .share-a-joke{
+    .welcome-info p, .share-a-joke p{
         font-size: 30px;
     }
     
-    .random-joke-main-container h3, .welcome-info h3 {
+    .random-joke-main-container h3, .welcome-info h3, .share-a-joke h3 {
         font-size: 45px;
     }
 }
