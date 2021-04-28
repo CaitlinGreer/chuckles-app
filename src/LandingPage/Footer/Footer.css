@@ -1,8 +1,29 @@
 .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
     background-color: #000;
     color: white;
     padding: 20px 20px;
-    display: flex;
-    justify-content: space-between;
+    
 }
 
+.footer-container p {
+    padding-top: 10px;
+}
+.footer-container ul {
+    list-style: none;
+    margin-top: 1%;
+}
+
+.footer-container a {
+    color: white;
+    font-size: 25px;    
+}
+
+@media all and(min-width: 600px) {
+    .footer-container{
+        padding: 20px 30px;
+        font-size: 35px;
+    }
+}
