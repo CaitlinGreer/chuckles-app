@@ -109,7 +109,7 @@ class AddJoke extends Component {
                         <input 
                             type='text'
                             id='punchline'
-                            className='punchline'
+                            className='punchline-input'
                             name='punchline'
                             placeholder='To get to the other side'
                             onChange={e => this.updatePunchline(e.target.value)}
