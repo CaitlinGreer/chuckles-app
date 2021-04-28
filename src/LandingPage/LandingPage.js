@@ -18,11 +18,13 @@ class LandingPage extends Component {
                         <p>Did you know laughter and smiling are scientifically proven to improve your health and mental state?  
                            Yes, you read that right!  That means laughter really is the best medicine!  I know...it's crazy right? 
                            <br /> <br />
-                           If you find yourself feeling like you're drowning in a sea of humans who take life way too seriously!  Chuckles is here to save you from those days full of serious!  
+                           Do you ever find yourself feeling like you're drowning in a sea of humans who take life way too seriously?  
+                           Chuckles is here to save you from the days full of serious!  So kick back, relax and have a laugh.
                            Let us tell you some jokes, or feel free to get wacky and add to the silliness.
                         </p>
                         <p>
-                           Chuckles is here to turn a bad day into a good day and a good day into a great day.  So turn that frown upside down and lets get to chuckling!
+                           Chuckles is here to turn a bad day into a good day and a good day into a great day.  
+                           Let's turn that frown upside down and get to chuckling!
                         </p>
                     </div> 
                     <div className='share-a-joke'>
