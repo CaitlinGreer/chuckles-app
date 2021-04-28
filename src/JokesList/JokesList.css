@@ -1,3 +1,7 @@
+.joke-card-list {
+    padding-bottom: 120px;
+}
+
 .jokes-container {
     display: flex;
     flex-direction: row;
@@ -16,6 +20,7 @@
     padding: 3%;
     font-size: 40px;
     font-family: 'Luckiest Guy', sans-serif;
+    text-shadow: 2px 2px black;
     background-color: transparent;
     color: transparent;
     color: white;
@@ -46,3 +51,12 @@
     }
     
     
+@media all and (min-width: 600px) {
+    .joke-list-heading {
+        margin-top: 5%;
+        margin-left: 20%;
+        margin-right: 20%;
+        font-size: 50px;
+        
+    }
+}
