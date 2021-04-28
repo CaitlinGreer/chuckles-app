@@ -21,7 +21,7 @@
     font-size: 25px;    
 }
 
-@media all and(min-width: 600px) {
+@media all and (min-width: 600px) {
     .footer-container{
         padding: 20px 30px;
         font-size: 35px;
