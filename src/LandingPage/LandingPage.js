@@ -23,7 +23,7 @@ class LandingPage extends Component {
                            Let us tell you some jokes, or feel free to get wacky and add to the silliness.
                         </p>
                         <p>
-                           Chuckles is here to turn a bad day into a good day and a good day into a great day.  
+                           A simple joke can be all it takes to turn a bad day into a good day and a good day into a great day.  
                            Let's turn that frown upside down and get to chuckling!
                         </p>
                     </div> 
