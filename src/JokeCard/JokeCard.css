@@ -4,8 +4,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    border-radius: 50%;
-    background: linear-gradient(45deg, rgba(7, 153, 238, 0.44), rgba(255, 140, 0, 0.44), rgba(255, 0, 128, 0.44));
+    border-radius: 25px;
+    background: linear-gradient(45deg, rgba(7, 153, 238, 0.9), rgba(255, 140, 0, 0.9), rgba(255, 0, 128, 0.9));
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 3px 10px rgba(0, 0, 0, 0.4);
     margin: 10px;
     padding: 25px;
@@ -15,9 +15,10 @@
   }
   .joke-card {
     font-family: 'Raleway', sans-serif;
-    font-size: 25px;
+    font-size: 30px;
+    text-shadow: 1px 1px black;
     color: white;
-    margin-top: 33%;
+    margin-top: 25%;
     height: 100%;
     position: absolute;
     transform-style: preserve-3d;
@@ -44,3 +45,9 @@
   .user, .date {
     font-size: 15px;
   }
+
+@media all and (min-width: 600px) {
+  .user, .date {
+    font-size: 20px;
+  }
+}
