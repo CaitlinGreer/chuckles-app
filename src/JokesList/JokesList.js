@@ -15,8 +15,8 @@ class JokesList extends Component {
         const sortedJokes = [...jokes].sort((a,b) => new Date(b.date_submitted) - new Date(a.date_submitted))
                     
             return (
-                <section className='JokeCardList'>
-                <h2 className='joke-list-heading'>Let's Have A Chuckle...</h2>
+                <section className='joke-card-list'>
+                <h2 className='joke-list-heading'>Let's Have A Chuckle</h2>
 
                     <ul className='jokes-container' aria-live='polite'>
                         {sortedJokes.map(joke =>
