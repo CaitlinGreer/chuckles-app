@@ -11,7 +11,7 @@ function JokeCard(props){
                         <div className='side'>{props.joke}</div>
                         <div className='side-back'>
                             <div className='punchline'>{props.punchline}</div>
-                            <div className='user'>Submitted By: {props.submitted_by}</div>
+                            <div className='user'>Submitted By: <br />{props.submitted_by}</div>
                             <div className='date'>
                             <Moment format='MMM D, YYYY'>{props.date_submitted}</Moment>
                             </div>
