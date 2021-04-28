@@ -29,8 +29,10 @@ class LandingPage extends Component {
                     </div> 
                     <div className='share-a-joke'>
                         <h3>Tell A Joke</h3>
-                        <p>If you're feeling adventurous you may even share a joke or two right <Link to={'/add-joke'}>here</Link>! Don't worry we keep them anonymous, we won't let
-                           anyone know how much you love tacky, corny punny nonsense
+                        <p>If you're feeling a little wacky you may even share a joke or two right <Link to={'/add-joke'}>here</Link>! 
+                            Feel free to let us know your name to take pride in your love for all things punny.  
+                            Or if you want to keep it on the DL (as the kids say), make up a hilarious user name to go with your joke
+                            and we'll keep your love for bad jokes a secret.
                         </p>
                     </div>
                     <div className='random-joke-main-container'>
