@@ -106,4 +106,10 @@
     .random-joke-main-container h3, .welcome-info h3, .share-a-joke h3 {
         font-size: 45px;
     }
+
+    .random-joke-main-container {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
 }
+

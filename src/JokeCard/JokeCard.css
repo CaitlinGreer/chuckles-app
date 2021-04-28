@@ -18,7 +18,7 @@
     font-size: 30px;
     text-shadow: 1px 1px black;
     color: white;
-    margin-top: 25%;
+    margin-top: 15%;
     height: 100%;
     position: absolute;
     transform-style: preserve-3d;
@@ -46,8 +46,24 @@
     font-size: 15px;
   }
 
+  .side, .side-back {
+    padding: 2px;
+
+  }
+ 
 @media all and (min-width: 600px) {
   .user, .date {
     font-size: 20px;
   }
+}
+
+@media all and (max-width: 480px) {
+    .joke-card-container {
+      height: 200px;
+      width: 200px;
+    }
+
+    .joke-card {
+      font-size: 20px;
+    }
 }
