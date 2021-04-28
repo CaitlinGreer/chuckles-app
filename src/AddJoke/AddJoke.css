@@ -78,7 +78,11 @@
 
 @media all and (min-width: 600px) {
     .form-page-container {
-        margin-top: 10%;
+        margin-top: 5%;
+    }
+
+    .legend {
+        font-size: 40px;
     }
 
     .form-heading {
