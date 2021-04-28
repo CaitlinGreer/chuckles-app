@@ -100,11 +100,11 @@
 
 @media all and (min-width: 600px) {
     .welcome-info p, .share-a-joke p{
-        font-size: 30px;
+        font-size: 25px;
     }
     
     .random-joke-main-container h3, .welcome-info h3, .share-a-joke h3 {
-        font-size: 45px;
+        font-size: 40px;
     }
 
     .random-joke-main-container {
