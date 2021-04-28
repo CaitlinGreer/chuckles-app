@@ -88,16 +88,17 @@ class AddJoke extends Component {
         return (
             <div className='form-page-container'>
                 <div className='form-heading'>
-                    <h2>Share A Chuckle...We Dare You!</h2>
+                    <h2>Share A Chuckle</h2>
                 </div>
-                <form onSubmit={e => this.handleSubmit(e)}>
+                <form onSubmit={e => this.handleSubmit(e)} className='form'>
                     <fieldset className='add-joke-fieldset'>
-                        <legend>Tell Us A Joke</legend>
+                        <legend className='legend'>Tell Us A Joke</legend>
 
                         <label htmlFor='joke'>Joke:</label>
                         <input 
                             type='text'
                             id='joke'
+                            className='joke'
                             name='joke'
                             placeholder='Why did the chicken cross the road?'
                             onChange={e => this.updateJoke(e.target.value)}
@@ -108,6 +109,7 @@ class AddJoke extends Component {
                         <input 
                             type='text'
                             id='punchline'
+                            className='punchline'
                             name='punchline'
                             placeholder='To get to the other side'
                             onChange={e => this.updatePunchline(e.target.value)}
