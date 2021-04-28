@@ -6,7 +6,7 @@ import './JokeCard.css'
 function JokeCard(props){
         return (
             <div>
-                <div className='joke-card-container'>
+                <div className='card-container'>
                     <div className='joke-card'>
                         <div className='front'>{props.joke}</div>
                         <div className='back'>

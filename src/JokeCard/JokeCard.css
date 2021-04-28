@@ -1,17 +1,17 @@
 
-.joke-card-container {
+.card-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+    align-content: center;
     border-radius: 25px;
     background: linear-gradient(45deg, rgba(7, 153, 238, 0.9), rgba(255, 140, 0, 0.9), rgba(255, 0, 128, 0.9));
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 3px 10px rgba(0, 0, 0, 0.4);
     margin: 10px;
-    padding: 25px;
-    height: 300px;
+    padding-top: 20%;
+    height: 270px;
     position: relative;
-    width: 300px;
+    width: 270px;
   }
   .joke-card {
     font-family: 'Raleway', sans-serif;
@@ -57,15 +57,26 @@
   }
  
 @media all and (min-width: 600px) {
+  .user {
+    padding: 5px;
+  }
+  
   .user, .date {
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+  .front, .punchline{
+    font-size: 25px;
+  }
+  .card-container {
+    padding-top: 10%;
   }
 }
 
 @media all and (max-width: 480px) {
-    .joke-card-container {
-      height: 200px;
-      width: 200px;
+    .card-container {
+      height: 250px;
+      width: 250px;
     }
 
     .joke-card {
