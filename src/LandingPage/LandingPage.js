@@ -15,9 +15,11 @@ class LandingPage extends Component {
                 <div className='landing-page-container' id='landing-page-container'>
                     <div className='welcome-info'>
                         <h3>A Little About Chuckles!</h3>
-                        <p>Did you know laughter and smiling are scientifically proven to improve your health and mental state?  That means laughter really is the best medicine!  I know...it's crazy right? 
+                        <p>Did you know laughter and smiling are scientifically proven to improve your health and mental state?  
+                           Yes, you read that right!  That means laughter really is the best medicine!  I know...it's crazy right? 
                            <br /> <br />
-                           Every day we're surrounded by humans who take life too seriously.  Chuckles is here to do the exact opposite!
+                           If you find yourself feeling like you're drowning in a sea of humans who take life way too seriously!  Chuckles is here to save you from those days full of serious!  
+                           Let us tell you some jokes, or feel free to get wacky and add to the silliness.
                         </p>
                         <p>
                            Chuckles is here to turn a bad day into a good day and a good day into a great day.  So turn that frown upside down and lets get to chuckling!
