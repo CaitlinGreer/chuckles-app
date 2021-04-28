@@ -54,7 +54,7 @@
 
 .subheader {
     font-family: 'Raleway', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     text-shadow: 1px 1px black;
     margin-top: -5px;
   }
@@ -79,6 +79,10 @@
     
     .header-title {
           font-size: 55px;
+    }
+
+    .subheader {
+        font-size: 35px;
     }
   }
 
