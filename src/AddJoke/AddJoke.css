@@ -1,15 +1,102 @@
-.form-heading{
-    font-size: 35px;
+.form-page-container {
+    padding-bottom: 20%;
+    margin-top: 20%;
+   
 }
 
+.form-heading, .add-joke-fieldset {
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-top: 15%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 25px;
+    font-family: 'Luckiest Guy', sans-serif;
+    text-shadow: 2px 2px black;
+    background-color: transparent;
+    color: transparent;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 3px 10px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(268deg, #0799ee, #ff8c00, #ff0080);
+    background-size: 600% 600%;
+    -webkit-animation: gradient 19s ease infinite;
+    -moz-animation: gradient 19s ease infinite;
+    animation: gradient 19s ease infinite;
+    }
+    
+    @-webkit-keyframes gradient {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes gradient {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes gradient {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+
+.legend {
+    font-size: 30px;
+    text-shadow: 2px 2px black;
+}
 .add-joke-fieldset{
     display: flex;
     flex-direction: column;
-    margin: 10px 45px;
-    padding: 35px;
-    font-size: 20px;
+    margin: 40px 15px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 25px;
+}
+
+.add-joke-fieldset input {
+    padding: 10px;
+    border-radius: 15px;
 }
 
 .submit-btn {
     max-width: 150px;
+    padding: 5px;
+    margin-left: 1%;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #0799ee;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+@media all and (min-width: 600px) {
+    .form-page-container {
+        margin-top: 10%;
+    }
+
+    .form-heading {
+        margin-top: 3%;
+        font-size: 35px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .add-joke-fieldset {
+        margin-left: 8%;
+        margin-right: 8%;
+        font-size: 30px;
+    }
+
+    .submit-btn {
+        max-width: 200px;
+        font-size: 20px;
+    }
+
 }
