@@ -49,11 +49,13 @@
 .header-title {
     font-family: 'Luckiest Guy', sans-serif;
     font-size: 45px;
+    text-shadow: 2px 2px black;
 }
 
 .subheader {
     font-family: 'Raleway', sans-serif;
     font-size: 25px;
+    text-shadow: 1px 1px black;
     margin-top: -5px;
   }
 
