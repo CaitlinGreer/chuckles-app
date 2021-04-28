@@ -14,7 +14,7 @@ class LandingPage extends Component {
             
                 <div className='landing-page-container' id='landing-page-container'>
                     <div className='welcome-info'>
-                        <h3>A Little About Chuckles!</h3>
+                        <h3>A Little About Chuckles</h3>
                         <p>Did you know laughter and smiling are scientifically proven to improve your health and mental state?  
                            Yes, you read that right!  That means laughter really is the best medicine!  I know...it's crazy right? 
                            <br /> <br />
@@ -32,7 +32,7 @@ class LandingPage extends Component {
                         <p>If you're feeling a little wacky you may even share a joke or two right <Link to={'/add-joke'}>here</Link>! 
                             Feel free to let us know your name to take pride in your love for all things punny.  
                             Or if you want to keep it on the DL (as the kids say), make up a hilarious user name to go with your joke
-                            and we'll keep your love for bad jokes a secret.
+                            and we'll keep your love for dad jokes a secret.
                         </p>
                     </div>
                     <div className='random-joke-main-container'>
