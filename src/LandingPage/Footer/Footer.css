@@ -3,17 +3,18 @@
     justify-content: space-between;
     align-content: center;
     background-color: #000;
-    color: white;
-    padding: 5px 20px;
-    
+    color: white;   
 }
 
 .footer-container p {
     padding-top: 10px;
 }
+
 .footer-container ul {
     list-style: none;
     margin-top: 1%;
+    padding-top: 5px;
+    padding-right: 10px;
 }
 
 .footer-container a {
@@ -23,7 +24,7 @@
 
 @media all and (min-width: 600px) {
     .footer-container{
-        padding: 5px 30px;
+        padding: 5px;
         font-size: 20px;
     }
 
