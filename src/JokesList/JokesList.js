@@ -11,7 +11,7 @@ class JokesList extends Component {
     static contextType = JokesContext
       
     render() {
-        const { jokes } = this.context
+        const { jokes } = this.context || [] // This ensures `jokes` defaults to an empty array if undefined
         const sortedJokes = [...jokes].sort((a,b) => new Date(b.date_submitted) - new Date(a.date_submitted))
                     
             return (
